@@ -71,7 +71,9 @@ export default function Home() {
 
           <div className="text-center mt-8">
             <div className="flex items-center justify-center gap-2">
-              <span className="text-sm text-slate-400">Didn't redirect?</span>
+              <span className="text-sm text-slate-400">
+                Didn&apos;t redirect?
+              </span>
               <a
                 href={resumeUrl}
                 className="text-sm text-slate-200 hover:text-white underline flex items-center gap-1"
