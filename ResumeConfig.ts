@@ -4,11 +4,11 @@ export const ResumeConfig = {
   // You can use services like Google Drive, Dropbox, or your own server to host the file
   // Make sure to set the file permissions to public or anyone with the link can view
   resumeUrl:
-    "https://drive.google.com/file/d/14ZoBwda8dufni_yts630bKkxF2DSi3Dv/view",
+    "https://drive.google.com/file/d/16sih9TyzH8xHX0fO-rhsEWxLFMw36m7c/view?usp=sharing",
 
   // Personal Information - these will be displayed on the page
-  name: "Vishal Rajesh Mahajan",
-  designation: "Aspiring Software Developer",
+  name: "VishalRMahajan",
+  designation: "Software Developer",
 
   // Social Media Links - these will be displayed as icons on the page
   // You can add or remove social media links as needed
