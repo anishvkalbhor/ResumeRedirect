@@ -8,7 +8,7 @@ export const ResumeConfig = {
 
   // Personal Information - these will be displayed on the page
   name: "VishalRMahajan",
-  designation: "Software Software Development Engineer",
+  designation: "Software Development Engineer",
 
   // Social Media Links - these will be displayed as icons on the page
   // You can add or remove social media links as needed
