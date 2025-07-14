@@ -5,7 +5,7 @@ import { ResumeConfig } from "../../../../ResumeConfig";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { timestamp, sendMail = true } = body;
+    const { timestamp, sendMail = true, source = "direct" } = body;
 
     console.log(`Resume viewed at ${new Date(timestamp).toLocaleString()}`);
 
@@ -74,9 +74,13 @@ export async function POST(request: Request) {
                           <p style="color: #374151; font-size: 14px; font-weight: 500; margin: 0 0 6px 0;">Resume URL</p>
                           <a href="${ResumeConfig.resumeUrl}" style="color: #3b82f6; text-decoration: none; font-size: 14px; word-break: break-all;">${ResumeConfig.resumeUrl}</a>
                         </div>
-                        <div>
+                        <div style="margin-bottom: 20px;">
                           <p style="color: #374151; font-size: 14px; font-weight: 500; margin: 0 0 6px 0;">Viewed At</p>
                           <p style="color: #111827; font-size: 14px; margin: 0; font-weight: 400;">${formattedDate} IST</p>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                          <p style="color: #374151; font-size: 14px; font-weight: 500; margin: 0 0 6px 0;">Source</p>
+                          <p style="color: #111827; font-size: 14px; margin: 0; font-weight: 400;">${source}</p>
                         </div>
                       </div>
                       

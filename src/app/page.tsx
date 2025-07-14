@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import { ResumeConfig } from "../../ResumeConfig";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useSearchParams } from "next/navigation";
 
 import ProgressBar from "../components/ProgressBar";
 import SocialLinks from "../components/SocialLinks";
@@ -13,6 +14,8 @@ export default function Home() {
   const [isRedirecting, setIsRedirecting] = useState(false);
   const [mounted, setMounted] = useState(false);
   const emailSentRef = useRef(false);
+  const searchParams = useSearchParams();
+  const source = searchParams.get("src") || "direct";
 
   useEffect(() => {
     setMounted(true);
@@ -41,6 +44,7 @@ export default function Home() {
       const data = JSON.stringify({
         timestamp: new Date().toISOString(),
         sendMail: notifications?.sendMail ?? true,
+        source,
       });
 
       if (navigator.sendBeacon) {

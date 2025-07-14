@@ -8,7 +8,7 @@ export const ResumeConfig = {
 
   // Personal Information - these will be displayed on the page
   name: "VishalRMahajan",
-  designation: "Software Developer",
+  designation: "Software Software Development Engineer",
 
   // Social Media Links - these will be displayed as icons on the page
   // You can add or remove social media links as needed
@@ -24,10 +24,9 @@ export const ResumeConfig = {
   // Search Engine Optimization (SEO) - these will be used for the page metadata
   // You can customize the title and description for better visibility on search engines
   seo: {
-    title: "Vishal Mahajan | Resume",
-    description: "Software Developer Resume - Vishal Rajesh Mahajan",
+    title: "Vishal Mahajan | Developer Resume",
+    description: "Resume of Vishal Mahajan (VishalRMahajan).",
   },
-
   // Email notification settings
   // This will send an email notification when the resume link is opened
   // You can set this to false if you don't want to receive email notifications
