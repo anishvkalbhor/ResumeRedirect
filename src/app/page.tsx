@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, Suspense } from "react";
 import { ResumeConfig } from "../../ResumeConfig";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useSearchParams } from "next/navigation";
@@ -8,14 +8,28 @@ import { useSearchParams } from "next/navigation";
 import ProgressBar from "../components/ProgressBar";
 import SocialLinks from "../components/SocialLinks";
 
+interface SearchParamsHandlerProps {
+  onSourceReceived: (source: string) => void;
+}
+
+function SearchParamsHandler({ onSourceReceived }: SearchParamsHandlerProps) {
+  const searchParams = useSearchParams();
+  const source = searchParams.get("src") || "direct";
+
+  useEffect(() => {
+    onSourceReceived(source);
+  }, [source, onSourceReceived]);
+
+  return null;
+}
+
 export default function Home() {
   const { resumeUrl, name, designation, socialMedia, notifications } =
     ResumeConfig;
-  const [isRedirecting, setIsRedirecting] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const emailSentRef = useRef(false);
-  const searchParams = useSearchParams();
-  const source = searchParams.get("src") || "direct";
+  const [isRedirecting, setIsRedirecting] = useState<boolean>(false);
+  const [mounted, setMounted] = useState<boolean>(false);
+  const [source, setSource] = useState<string>("direct");
+  const emailSentRef = useRef<boolean>(false);
 
   useEffect(() => {
     setMounted(true);
@@ -72,6 +86,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
+      <Suspense fallback={null}>
+        <SearchParamsHandler onSourceReceived={setSource} />
+      </Suspense>
+
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/10 via-transparent to-transparent"></div>
       <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,_transparent_0deg,_#7c3aed_180deg,_transparent_360deg)] opacity-5"></div>
 
