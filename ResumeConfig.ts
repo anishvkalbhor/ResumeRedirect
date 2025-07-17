@@ -4,11 +4,11 @@ export const ResumeConfig = {
   // You can use services like Google Drive, Dropbox, or your own server to host the file
   // Make sure to set the file permissions to public or anyone with the link can view
   resumeUrl:
-    "https://drive.google.com/file/d/1Tp3qt2lX1HfL07tZDFa-4MXj9hrCw0ax/view?usp=drive_link",
+    "https://drive.google.com/file/d/1vJabrr_j3Awxrk7WN7rMLJlZm66xPzhN/view?usp=drive_link",
 
   // Personal Information - these will be displayed on the page
   name: "Anish Vijay Kalbhor",
-  designation: "Full Stack Developer",
+  designation: "Software Engineer",
 
   // Social Media Links - these will be displayed as icons on the page
   // You can add or remove social media links as needed
@@ -17,7 +17,7 @@ export const ResumeConfig = {
     github: "https://github.com/anishvkalbhor",
     linkedin: "https://linkedin.com/in/anishvkalbhor",
     portfolio: "https://portfolio-website-gamma-umber.vercel.app/",
-    twitter: "https://x.com/KalbhorAni14950",
+    leetcode: "https://leetcode.com/u/anishkalbhor/",
     email: "mailto:anishkalbhor2020@gmail.com",
   },
 
@@ -25,7 +25,7 @@ export const ResumeConfig = {
   // You can customize the title and description for better visibility on search engines
   seo: {
     title: "Anish Kalbhor | Resume",
-    description: "Full Stack Developer Resume - Anish Vijay Kalbhor",
+    description: "Software Engineer Resume - Anish Vijay Kalbhor",
   },
 
   // Email notification settings
