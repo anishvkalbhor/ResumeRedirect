@@ -36,7 +36,7 @@ export default function Home() {
 
     const link = document.createElement("link");
     link.rel = "prefetch";
-    link.href = resumeUrl;
+    link.href = resumeUrl ?? "";
     document.head.appendChild(link);
 
     const timer = setTimeout(() => {
@@ -73,7 +73,7 @@ export default function Home() {
       }
     }
 
-    window.location.href = resumeUrl;
+    window.location.href = resumeUrl ?? "";
   };
 
   if (!mounted) {

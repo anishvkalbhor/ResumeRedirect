@@ -3,8 +3,7 @@ export const ResumeConfig = {
   // This URL should be publicly accessible for the redirect to work
   // You can use services like Google Drive, Dropbox, or your own server to host the file
   // Make sure to set the file permissions to public or anyone with the link can view
-  resumeUrl:
-    "https://drive.google.com/file/d/1s2b3e5dMozWPUDZMFEzzBmuxKh3Gi5Qj/view?usp=drivesdk",
+  resumeUrl: process.env.NEXT_PUBLIC_RESUME_URL,
 
   // Personal Information - these will be displayed on the page
   name: "VishalRMahajan",
