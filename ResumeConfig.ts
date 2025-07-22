@@ -16,7 +16,7 @@ export const ResumeConfig = {
   socialMedia: {
     github: "https://github.com/anishvkalbhor",
     linkedin: "https://linkedin.com/in/anishvkalbhor",
-    portfolio: "https://portfolio-website-gamma-umber.vercel.app/",
+    portfolio: "https://anishvkalbhor.vercel.app",
     leetcode: "https://leetcode.com/u/anishkalbhor/",
     email: "mailto:anishkalbhor2020@gmail.com",
   },
