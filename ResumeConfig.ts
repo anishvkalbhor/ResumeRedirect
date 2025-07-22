@@ -4,7 +4,7 @@ export const ResumeConfig = {
   // You can use services like Google Drive, Dropbox, or your own server to host the file
   // Make sure to set the file permissions to public or anyone with the link can view
   resumeUrl:
-    "https://drive.google.com/file/d/1vJabrr_j3Awxrk7WN7rMLJlZm66xPzhN/view?usp=drive_link",
+    "https://drive.google.com/file/d/1AohXDapyn_uxklMH1e3-ovx4ZKv_ZBaB/view?usp=sharing",
 
   // Personal Information - these will be displayed on the page
   name: "Anish Vijay Kalbhor",
