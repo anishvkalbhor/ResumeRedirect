@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { LiaLinkedinIn } from "react-icons/lia";
-import { CgWebsite } from "react-icons/cg";
+import { FaGlobe } from "react-icons/fa";
 
 type SocialLinksProps = {
   socialMedia: {
@@ -52,7 +52,7 @@ export default function SocialLinks({ socialMedia }: SocialLinksProps) {
           aria-label="Portfolio Website"
           title="Portfolio"
         >
-          <CgWebsite size={18} className="text-slate-300" />
+          <FaGlobe size={18} className="text-slate-300" />
         </a>
       )}
 

@@ -6,6 +6,14 @@
 
 ResumeRedirect is a lightweight and modern solution for sharing your resume via a persistent link  with built-in branding, fallback links, and optional email notifications. Perfect for developers who frequently update their resumes but want a single link that stays consistent. 🚀📄
 
+## Demo
+
+
+
+
+https://github.com/user-attachments/assets/6f566a5e-778b-4161-8390-92b995f057ea
+
+
 
 ## Table of Contents
 
@@ -131,13 +139,6 @@ Deploy with Vercel:
 <p align="left">
   <img src="https://skillicons.dev/icons?i=nextjs,tailwindcss,ts,&perline=14" />
 </p>
-
-
-## Screenshots
-
-![Desktop](https://github.com/user-attachments/assets/26d65dcf-6054-4ac5-8e64-9d567bf4e4c0)
-
-
 
 ## License
 

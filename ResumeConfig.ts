@@ -3,12 +3,11 @@ export const ResumeConfig = {
   // This URL should be publicly accessible for the redirect to work
   // You can use services like Google Drive, Dropbox, or your own server to host the file
   // Make sure to set the file permissions to public or anyone with the link can view
-  resumeUrl:
-    "https://drive.google.com/file/d/1AohXDapyn_uxklMH1e3-ovx4ZKv_ZBaB/view?usp=sharing",
+  resumeUrl: process.env.NEXT_PUBLIC_RESUME_URL,
 
   // Personal Information - these will be displayed on the page
-  name: "Anish Vijay Kalbhor",
-  designation: "Software Engineer",
+  name: "Anish Kalbhor",
+  designation: "Software Development Engineer",
 
   // Social Media Links - these will be displayed as icons on the page
   // You can add or remove social media links as needed
@@ -24,10 +23,9 @@ export const ResumeConfig = {
   // Search Engine Optimization (SEO) - these will be used for the page metadata
   // You can customize the title and description for better visibility on search engines
   seo: {
-    title: "Anish Kalbhor | Resume",
-    description: "Software Engineer Resume - Anish Vijay Kalbhor",
+    title: "Anish Kalbhor | Developer Resume",
+    description: "Resume of Anish Kalbhor.",
   },
-
   // Email notification settings
   // This will send an email notification when the resume link is opened
   // You can set this to false if you don't want to receive email notifications
